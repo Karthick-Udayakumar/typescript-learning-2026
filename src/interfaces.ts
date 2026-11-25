@@ -83,3 +83,27 @@ console.log(userdetail1);
 
 let username : userName = 'LLM001'
 console.log(username);
+
+
+interface bank{
+    amount: number 
+    credit():void
+    debit():void
+    transfer():void
+}
+
+class ICICI implements bank{
+     amount = 100
+    credit():void
+    {
+        console.log("Credit");
+    }
+
+    debit():void{
+        console.log("Debit");
+    }
+
+    transfer(): void {
+        console.log("transfer");
+    }
+}
